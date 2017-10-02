@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo"
+    tools:context="mx.jennifermontano.formularioje.Datos">
+
+    <LinearLayout
+        android:id="@+id/espacio_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <!--NOMBRE-->
+        <ImageView
+            android:id="@+id/imagen_usuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/username" />
+
+        <TextView
+            android:id="@+id/et_nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nombrar"
+            android:ems="10"
+            android:textColor="@color/textos"
+            android:textStyle="bold|italic"
+            android:layout_gravity="center_vertical"
+            android:textSize="20dp" />
+
+        <!--Teléfono-->
+        <ImageView
+            android:id="@+id/imagen_telefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imagen_usuario"
+            android:layout_column="0"
+            android:layout_gravity="center_vertical"
+            android:layout_row="2"
+            android:src="@drawable/telephone" />
+
+        <TextView
+            android:id="@+id/et_telefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="@color/textos"
+            android:textStyle="bold|italic"
+            android:layout_gravity="center_vertical"
+            android:text="@string/telefonear"
+            android:textSize="20dp" />
+
+        <!-- Correo Electrónico-->
+        <ImageView
+            android:id="@+id/imagen_correo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imagen_telefono"
+            android:layout_column="0"
+            android:layout_gravity="center_vertical"
+            android:layout_row="2"
+            android:src="@drawable/correoelectronico" />
+
+        <TextView
+            android:id="@+id/et_correo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="@color/textos"
+            android:textStyle="bold|italic"
+            android:text="@string/direccionar"
+            android:textSize="20dp" />
+
+        <!-- Descripción-->
+        <ImageView
+            android:id="@+id/imagen_descripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imagen_correo"
+            android:layout_column="0"
+            android:layout_gravity="center_vertical"
+            android:layout_row="2"
+            android:src="@drawable/descripcionusuario" />
+
+        <TextView
+            android:id="@+id/et_descripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="@color/textos"
+            android:textStyle="bold|italic"
+            android:text="@string/describir"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            />
+
+        <TextView
+            android:id="@+id/et_fechan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="@color/textos"
+            android:textStyle="bold|italic"
+            android:text="@string/fechan"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/et_dia"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_fechan"
+            android:ems="10"
+            android:text="@string/dia"
+            android:textColor="@color/textos"
+            android:textSize="20dp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/et_mes"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="@string/mes"
+            android:textColor="@color/textos"
+            android:textSize="20dp"
+            android:textStyle="bold|italic"
+             />
+
+        <TextView
+            android:id="@+id/et_año"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="@string/año"
+            android:textColor="@color/textos"
+            android:textSize="20dp"
+            android:textStyle="bold|italic" />
+
+
+    </LinearLayout>
+
+    <!-- BOTONES : Bottom Bar -->
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <!-- Botón EDITAR-->
+
+        <Button
+            android:id="@+id/btnEditar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorAccent"
+            android:text="@string/actividad_editar"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+
+</RelativeLayout>

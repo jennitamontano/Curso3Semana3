@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">FormularioJe</string>
+
+    <string name="nombrar">Nombre :</string>
+    <string name="telefonear">Teléfono :</string>
+    <string name="direccionar">E-mail :</string>
+    <string name="describir">Descripción :</string>
+
+    <string name="hint_nombreusuario">Nombre del Usuario</string>
+    <string name="hint_numerotelefono">Número de Teléfono</string>
+    <string name="hint_correoelectronico">Correo Electrónico</string>
+    <string name="hint_descripcion">Descripción</string>
+
+    <string name="fechan">Fecha de Nacimiento:</string>
+    <string name="dia">Día:</string>
+    <string name="mes">Mes:</string>
+    <string name="año">Año:</string>
+
+    <string name="actividad_aceptar">A C E P T A R</string>
+    <string name="actividad_editar">E D I T A R</string>
+
+</resources>
